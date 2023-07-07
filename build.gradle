@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    //mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    //implementation 'org.example:multimodule-project:1.0-SNAPSHOT'
+
+    implementation 'org.example:common:1.0-SNAPSHOT'
+    implementation 'org.example:api:1.0-SNAPSHOT'
+    implementation 'org.example:mobile:1.0-SNAPSHOT'
+    implementation 'org.example:web:1.0-SNAPSHOT'
+    implementation 'org.example:legacy:1.0-SNAPSHOT'
+
+}
+
+test {
+    useJUnitPlatform()
+}
